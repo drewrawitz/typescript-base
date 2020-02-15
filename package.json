@@ -4,10 +4,10 @@
   "author": "Drew Rawitz (https://drewrawitz.com/)",
   "license": "GPLv3",
   "scripts": {
-    "build": "babel src --extensions .js,.ts,.tsx --out-dir dist",
+    "build": "babel src --out-dir dist",
     "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
     "check-types": "tsc",
-    "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|json|ts|tsx)\"",
+    "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|json)\"",
     "format": "npm run prettier -- --write",
     "check-format": "npm run prettier -- --list-different",
     "validate": "run-p check-types check-format lint build"
