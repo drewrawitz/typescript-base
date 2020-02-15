@@ -1,0 +1,17 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": ["airbnb-base", "prettier"],
+  "rules": {
+    "strict": ["error", "never"],
+    "no-console": 0
+  },
+  "env": {
+    "browser": true
+  }
+}
